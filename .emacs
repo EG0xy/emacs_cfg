@@ -9,7 +9,6 @@
 (global-hl-line-mode t)
 (winner-mode t)
 (windmove-default-keybindings)
-(load-theme 'wombat)
 
 					; Startup windowing
 (setq inhibit-startup-screen t)
@@ -39,9 +38,6 @@
              '("melpa-stable" . "http://stable.melpa.org/packages/") t)
 
 (package-initialize)
-
-
-
 
 					; Clock
 (display-time)
@@ -75,7 +71,6 @@
 ;; This is your old M-x.
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
-
 (defun never-split-a-window
     "Never, ever split a window.  Why would anyone EVER want you to do that??"
     nil)
@@ -85,5 +80,21 @@
 ;(set-default 'cursor-type
 ;	     'hbar)
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ansi-color-names-vector
+   ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
+ '(custom-enabled-themes (quote (wheatgrass)))
+ '(package-selected-packages (quote (smex))))
+
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
 
 

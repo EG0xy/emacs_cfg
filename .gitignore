@@ -1,3 +1,5 @@
 /*.emacs~
 /*.emacs#
 /.#.emacs
+/.#backup.emacs
+/backup.emacs
